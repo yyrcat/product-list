@@ -18,21 +18,33 @@
 			a{
 				text-decoration: none;
 			}
-			.proinfo{
+			.proInfo{
 				display: inline-block;
 				width:50%;
 				margin-left:1em;
 				vertical-align: top;
 			}
-			.proinfo h3{
+			.proInfo h3{
 				margin-top:0;
 			}
-			input[type="button"]{
+			input[type="button"],
+			#switcher{
+				padding:1em;
+				color:darkolivegreen;
+				background:#CCCCCC;
+				outline:none;
+				border:2px solid #CCCCCC;
 				vertical-align:top;
 			}
 			input[type="number"]{
 				width:3em;
 				vertical-align:top;
+			}
+			.inputQuan{
+				padding:1em;
+				width:4em;
+				vertical-align:top;
+				text-align: center;
 			}
 			label{
 				font-weight: bold;
@@ -43,8 +55,16 @@
 			.total label{
 				margin-right:.5em;
 			}
-			.promo{
-				margin-right:1em;
+			#promo-code{
+				padding:1em;
+				width: 7em;
+			}
+			.button-quan{
+				margin:0 .5em;
+			}
+
+			#button-promo{
+				margin:0 1em;
 			}
 			.check{
 				margin-top: 1em;
@@ -73,113 +93,146 @@
 		
 		<div class="main">
 			<a href="http://yyrcat.github.io/Intro-CSS-Home-Page/Assignment1.html">BACK</a>
-			<ul class="product">
-				<li>
+			<ul id="product">
+				<li id="silverChair">
 					<img src="http://placehold.it/350x150">
 					<div class="proInfo">
-						<h3 class="name">The Silver Chair (Narnia)</h3><p class="description">Book Description: 0060764937 Unused Like New. </p><p class="price">Price:$3.00</p>
+						<h3 class="name">Narnia-The Silver Chair</h3><p class="description">Book Description: 0060764937 Unused Like New. </p><p class="price">Price:$<span>3.00</span></p>
 					</div>
-					
-					<input type="button" value="Add to Cart">
+
+						<input id="1" class="addCart" type="button" value="Add to Cart">
+						<input class="inputQuan" min="1" value="1">
+
 
 				</li>
-				<li>
+				<li id="dawnThreader">
 					<img src="http://placehold.it/350x150">
 					<div class="proInfo">
-						<h3 class="name">The Voyage of the Dawn Treader (Narnia)</h3><p class="description">Book Description: 0060764945 Unused Like New. </p><p class="price">Price:$3.00</p>
+						<h3 class="name">Narnia-The Voyage of the Dawn Treader (Narnia)</h3>
+						<p class="description">Book Description: 0060764945 Unused Like New. </p>
+						<p class="price">Price:$ <span>3.00</span></p>
 					</div>
-					<input type="button" value="Add to Cart">
+
+						<input id="2" class="addCart" type="button" value="Add to Cart">
+						<input class="inputQuan" min="1" value="1">
+
+
 				</li>
-				<li>
+				<li id="prince">
 					<img src="http://placehold.it/350x150">
 					<div class="proInfo">
-						<h3 class="name">Prince Caspian: The Return to Narnia </h3><p class="description">Book Description: 0064405001 Little Shelf Wear.</p><p class="price">Price:$3.00</p>
+						<h3 class="name">Narnia-Prince Caspian: The Return to Narnia </h3>
+						<p class="description">Book Description: 0064405001 Little Shelf Wear.</p>
+						<p class="price">Price:$ <span>3.00</span></p>
 					</div>
-					<input type="button" value="Add to Cart">
+
+						<input id="3" class="addCart" type="button" value="Add to Cart">
+						<input class="inputQuan" min="1" value="1">
+
+
 				</li>
-				<li>
+				<li id="battle">
 					<img src="http://placehold.it/350x150">
 					<div class="proInfo">
-						<h3 class="name">The Last Battle</h3><p class="description">Book Description: Book has appearance of light use with no easily noticeable wear.  </p><p class="price">Price:$3.00</p>
+						<h3 class="name">Narnia-The Last Battle</h3>
+						<p class="description">Book Description: Book has appearance of light use with no easily noticeable wear.  </p>
+						<p class="price">Price:$ <span>3.00</span></p>
 					</div>
-					<input type="button" value="Add to Cart">
+
+						<input id="4" class="addCart" type="button" value="Add to Cart">
+						<input class="inputQuan" min="1" value="1">
+
+
 				</li>
-				<li>
+				<li id="christianity">
 					<img src="http://placehold.it/350x150">
 					<div class="proInfo">
-						<h3 class="name">Mere Christianity</h3><p class="description">Book Description: Almost in new condition. Book shows only very slight signs of use. Cover and binding are undamaged and pages show minimal use </p><p class="price">Price:$3.00</p>
+						<h3 class="name">Mere Christianity</h3>
+						<p class="description">Book Description: Almost in new condition. Book shows only very slight signs of use. Cover and binding are undamaged and pages show minimal use </p>
+						<p class="price">Price:$ <span>3.00</span></p>
 					</div>
-					<input type="button" value="Add to Cart">
+
+						<input id="5" class="addCart" type="button" value="Add to Cart">
+						<input class="inputQuan" min="1" value="1">
+
+
 				</li>
-				<li>
+				<li id="horse">
 					<img src="http://placehold.it/350x150">
 					<div class="proInfo">
-						<h3 class="name">The Horse and His Boy</h3><p class="description">Book Description: Former Library book. Shows some signs of wear, and may have some markings on the inside. </p><p class="price">Price:$3.00</p>
+						<h3 class="name">Narnia-The Horse and His Boy</h3>
+						<p class="description">Book Description: Former Library book. Shows some signs of wear, and may have some markings on the inside. </p>
+						<p class="price">Price:$ <span>3.00</span></p>
 					</div>
-					<input type="button" value="Add to Cart">
+
+						<input id="6" class="addCart" type="button" value="Add to Cart">
+						<input class="inputQuan" min="1" value="1">
+
+
 				</li>
-				<li>
+				<li id="letters">
 					<img src="http://placehold.it/350x150">
 					<div class="proInfo">
-						<h3 class="name">The Screwtape Letters</h3><p class="description">Book Description: Shows some signs of wear, and may have some markings on the inside. </p><p class="price">Price:$3.00</p>
+						<h3 class="name">The Screwtape Letters</h3>
+						<p class="description">Book Description: Shows some signs of wear, and may have some markings on the inside. </p>
+						<p class="price">Price:$ <span>3.00</span></p>
 					</div>
-					<input type="button" value="Add to Cart">
+
+						<input id="7" class="addCart" type="button" value="Add to Cart">
+						<input class="inputQuan" min="1" value="1">
+
+
 				</li>
-				<li>
+				<li id="lion">
 					<img src="http://placehold.it/350x150">
 					<div class="proInfo">
-						<h3 class="name">The Lion, the Witch and the Wardrobe </h3><p class="description">Book Description: Shows some signs of wear, and may have some markings on the inside. </p><p class="price">Price:$3.00</p>
+						<h3 class="name">Narnia-The Lion, the Witch and the Wardrobe </h3>
+						<p class="description">Book Description: Shows some signs of wear, and may have some markings on the inside. </p>
+						<p class="price">Price:$ <span>3.00</span></p>
 					</div>
-					<input type="button" value="Add to Cart">
+
+						<input id="8" class="addCart" type="button" value="Add to Cart">
+						<input class="inputQuan" min="1" value="1">
+
+
 				</li>
-				<li>
+				<li id="silent">
 					<img src="http://placehold.it/350x150">
 					<div class="proInfo">
-						<h3 class="name">Out Of The Silent Planet</h3><p class="description">Book Description: Good: Gently used may contain ex-library markings, possibly has some minor highlighting, textual notations, and or underlining. Text is still easily readable.  </p><p class="price">Price:$3.00</p>
+						<h3 class="name">Out Of The Silent Planet</h3>
+						<p class="description">Book Description: Good: Gently used may contain ex-library markings, possibly has some minor highlighting, textual notations, and or underlining. Text is still easily readable.  </p>
+						<p class="price">Price:$ <span>3.00</span></p>
 					</div>
-					<input type="button" value="Add to Cart">
+
+						<input id="9" class="addCart" type="button" value="Add to Cart">
+						<input class="inputQuan" min="1" value="1">
+
+
 				</li>
-				<li>
+				<li id="loves">
 					<img src="http://placehold.it/350x150">
 					<div class="proInfo">
-						<h3 class="name">The Four Loves</h3><p class="description">Book Description:Good: Gently used may contain ex-library markings, possibly has some minor highlighting, textual notations, and or underlining. Text is still easily readable.  </p><p class="price">Price:$3.00</p>
+						<h3 class="name">The Four Loves</h3>
+						<p class="description">Book Description:Good: Gently used may contain ex-library markings, possibly has some minor highlighting, textual notations, and or underlining. Text is still easily readable.  </p>
+						<p class="price">Price:$ <span>3.00</span></p>
 					</div>
-					<input type="button" value="Add to Cart">
+
+						<input id="10" class="addCart" type="button" value="Add to Cart">
+						<input class="inputQuan" min="1" value="1">
+
+
 				</li>
 			</ul>
-			<div class="cart">
+		<button id="switcher">Show Shopping Cart</button>
+			<div id="cart">
 				<h2>Shooping Cart</h2>
-				<ul class="product">
-					<li>
-						<img src="http://placehold.it/350x150">
-					<div class="proInfo">
-						<h3 class="name">The Four Loves</h3><p class="description">Book Description:Good: Gently used may contain ex-library markings, possibly has some minor highlighting, textual notations, and or underlining. Text is still easily readable.  </p><p class="price">Price:$3.00</p>
-						<a href="">Remove</a>
-					</div>
-					<input type="number" value="1">
-						
-					</li>
-					<li>
-						<img src="http://placehold.it/350x150">
-					<div class="proInfo">
-					<h3 class="name">Out Of The Silent Planet</h3><p class="description">Book Description: Good: Gently used may contain ex-library markings, possibly has some minor highlighting, textual notations, and or underlining. Text is still easily readable.  </p><p class="price">Price:$3.00</p>
-						<a href="">Remove</a>
-					</div>
-					<input type="number" value="1">
-					
-					</li>
-					<li>
-						<img src="http://placehold.it/350x150">
-					<div class="proInfo">
-					<h3 class="name">The Lion, the Witch and the Wardrobe </h3><p class="description">Book Description: Shows some signs of wear, and may have some markings on the inside. </p><p class="price">Price:$3.00</p>
-					<a href="">Remove</a>
-					</div>
-					<input type="number" value="1" min="1" step="1">
-						
-					</li>
+
+				<ul id="cartProduct">
+
+
 				</ul>
 				<div class="total">
-					<label for="">Promotion Code:</label><input type="text" class="promo"><label for="">Total Price:</label><span>$9.00</span>
+					<label for="">Promotion Code:</label><input type="text" id="promo-code"><input id="button-promo" type="button" value="Apply Code"><label for="">Total Price:</label>$<span class="totalPrice">0.00</span>
 					<div class="check">
 						<input type="button" value="Keep Shopping">
 						<input type="button" value="Check Out">
@@ -189,5 +242,6 @@
 				
 			</div>
 		</div>
+		<script src="cart.js"></script>
 	</body>
 </html>
