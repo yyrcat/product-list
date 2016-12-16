@@ -1,0 +1,84 @@
+body{
+	font-size:16px;
+	font-family: Arial;
+}
+.main{
+	width:60%;
+	margin:10em auto;
+}
+#product li,
+#cartProduct li{
+	padding-bottom:1em;
+	margin:1em 0;
+	list-style: none;
+	border-bottom:1px solid #D5DCDE;
+}
+.proInfo{
+	display: inline-block;
+	width:50%;
+	margin-left:1em;
+	vertical-align: top;
+}
+.proInfo h3{
+	margin-top:0;
+}
+input[type="button"],
+#switcher{
+	padding:1em;
+	color:darkolivegreen;
+	background:#CCCCCC;
+	outline:none;
+	border:2px solid #CCCCCC;
+	vertical-align:top;
+}
+input[type="number"]{
+	width:3em;
+	vertical-align:top;
+}
+.inputQuan{
+	padding:1em;
+	width:4em;
+	vertical-align:top;
+	text-align: center;
+}
+label{
+	font-weight: bold;
+}
+.total {
+	float:right;
+}
+.total label{
+	margin-right:.5em;
+}
+#promo-code{
+	padding:1em;
+	width: 7em;
+}
+.button-quan{
+	margin:0 .5em;
+}
+
+#button-promo{
+	margin:0 1em;
+}
+.check{
+	margin-top: 1em;
+	text-align: right;
+}
+.check input[type="button"]{
+	padding:1em;
+	font-weight:bold;
+	border:none;
+	border-radius:5px;
+	background:#DDD;
+	outline:none;
+	box-shadow:2px 3px 2px #EEEEEE;
+}
+.check input[type="button"]:hover{
+	background:#FF9FA8 ;
+	box-shadow:2px 3px 2px #FF9FA8;
+}
+.check input[type="button"]:active{
+	background:#9ADFF5 ;
+	box-shadow:2px 3px 2px #9ADFF5;
+}

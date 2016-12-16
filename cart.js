@@ -82,7 +82,7 @@ function appendHTML(){
     total=0;
 
     for(var i=0;i<cart.items.length;i++) {
-        var str='<li id="'+cart.items[i].id+i+'"><img src="http://placehold.it/350x150"><div class="proInfo"><h3 class="name">'+cart.items[i].name+'</h3><p class="description">'+cart.items[i].Des+'</p><p class="price">Price:$'+cart.items[i].Price+'</p><input id="'+cart.items[i].id+'" type="button"  class="remove" value="Remove"></div><input type="button" value="-" class="button-quan"><input  class="inputQuan"  value="'+cart.items[i].Quantity+'"><input class="button-quan" type="button" value="+"></li>';
+        var str='<li id="'+cart.items[i].id+i+'"><img src="https://i.imgsafe.org/4592a11412.png"><div class="proInfo"><h3 class="name">'+cart.items[i].name+'</h3><p class="description">'+cart.items[i].Des+'</p><p class="price">Price:$'+cart.items[i].Price+'</p><input id="'+cart.items[i].id+'" type="button"  class="remove" value="Remove"></div><input type="button" value="-" class="button-quan"><input  class="inputQuan"  value="'+cart.items[i].Quantity+'"><input class="button-quan" type="button" value="+"></li>';
         var newContent=document.createElement('div');
         newContent.innerHTML=str;
         /*add eventlistener to the remove button and change quantity button*/
